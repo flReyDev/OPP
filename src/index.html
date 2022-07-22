@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" Panel de control sistema" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- <link type="text/plain" rel="author" href="humans.txt" /> -->
+    <link rel="icon" href="assets/img/creando.png">
+    <title>Dashboard || Home</title>
+</head>
+<body>
+      <!-- Empieza el dashboard -->
+        <div class="container">
+          <aside class="aside_menu">
+            <div class="top">
+              <div class="logo">
+                <img class="img-logo" src="/assets/img/logo.svg" alt="Logo.svg">
+                <h2>TEC<span class="danger">SYS</span></h2>
+              </div>
+              <div class="close" id="btn-close">
+                <span class="material-icons">close</span>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+              <div class="sidebar">
+                <a href="/">
+                  <span class="material-icons">home</span>
+                  <h3>Home</h3>
+                </a>
+                <a href="/messagues">
+                  <span class="material-icons">message</span>
+                  <h3>Mensajes</h3>
+                  <span class="message-count">20</span>
+                </a>
+                <a href="/compras" class="active">
+                  <span class="material-icons">money</span>
+                  <h3>Compras</h3>
+                </a>
+                <a href="/presupuestos">
+                  <span class="material-icons">assessment</span>
+                  <h3>Presupuestos</h3>
+                </a>
+                <a href="/contratos">
+                  <span class="material-icons">content_paste_search</span>
+                  <h3>Contratos</h3>
+                </a>
+                <a href="/proveedores">
+                  <span class="material-icons">co_present</span>
+                  <h3>Proveedores</h3>
+                </a>
+                <a href="/rrhh">
+                  <span class="material-icons">group</span>
+                  <h3>RR-HH</h3>
+                </a>
+                <a href="/inventarios">
+                  <span class="material-icons">fact_check</span>
+                  <h3>Inventarios</h3>
+                </a>
+                <a href="/usuarios">
+                  <span class="material-icons">groups_3</span>
+                  <h3>Usuarios</h3>
+                </a>
+
+                <a href="/salir">
+                  <span class="material-icons">logout</span>
+                  <h3>Salir</h3>
+                </a>
+              </div>
+          </aside>
+           <!-- Fin sidebar -->
+
+           <!-- Container -->
+           <main>
+              <h1>Panel de control</h1>
+
+              <div class="date">
+                <input type="date" id="fecha">
+              </div>
+              
+              <div class="insights">
+
+                <!-- Usuarios -->
+                <div class="sales">
+                  <div class="middle">
+                    <div class="left">
+                      <h3>Proyectos</h3>
+                      <h1>1,235</h1>
+                    </div>
+                    <div class="progress">
+                      <div class="number">
+                        <span class="material-icons-outlined" id="group">scatter_plot</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                 <!-- Utimos ventas -->
+                <!-- Fin usuarios -->
+                <div class="moves">
+                  <div class="middle">
+                    <div class="left">
+                      <h3>Movimientos</h3>
+                      <h1>1,235</h1>
+                    </div>
+                    <div class="progress">
+                      <div class="number">
+                        <span class="material-icons-outlined">trending_up</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin ventas -->
+
+                <!-- Presupuestos -->
+                <div class="projects">
+                  <div class="middle">
+                    <div class="left">
+                      <h3>Ventas</h3>
+                      <h1>1,235</h1>
+                    </div>
+                    <div class="progress">
+                      <span class="material-icons-outlined">equalizer</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin presupuesto -->
+
+                
+
+              </div>
+
+              <!-- Zona de renderizado de contenido principal Router -->
+
+          
+          <div class="render-pages"> 
+            <h2 class="title">Titulo segun la pagina</h2>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>UM</th>
+                    <th>Stock</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PR-00002345</td>
+                    <td>RAM KINSTONG DDR4 16 GB</td>
+                    <td>UN</td>
+                    <td>35</td>
+                    <td class="danger">ROTATIVO</td>
+                    <td>Delete</td>
+                  </tr>
+                  <tr>
+                    <td>PR-00002346</td>
+                    <td>DISCON SSD KINSTONG 1T</td>
+                    <td>UN</td>
+                    <td>6</td>
+                    <td class="success">STOCK</td>
+                    <td>Delete</td>
+                  </tr>
+                  <tr>
+                    <td>PR-00002347</td>
+                    <td>MONITOR SAMSUNG 24"</td>
+                    <td>UN</td>
+                    <td>16</td>
+                    <td class="success">STOCK</td>
+                    <td>Delete</td>
+                  </tr>
+                  <tr>
+                    <td>PR-00002348</td>
+                    <td>GPU NVIDIA 3245 8GB</td>
+                    <td>UN</td>
+                    <td>21</td>
+                    <td class="warning">PENDIENTE</td>
+                    <td>Delete</td>
+                  </tr> 
+                </tbody>
+              </table>
+              <a href="#">Ver todo</a>
+            
+ 
+            </div>
+           <!-- Fin zona de renderizado -->
+           </main>
+           <!-- Fin main -->
+           <!-- container -->
+
+          <!-- Sección de icono de sessión, boton de menu -->
+           <div class="last-moves">
+              <div class="top">
+
+                <button type="button" class="btn_menu" id="btn_menu">
+                  <span class="material-icons-outlined">menu</span>
+                </button>
+
+                <div class="theme-notify">
+                  <span class="material-icons-outlined">notifications_active</span>
+                  <small class="message-notify">20</small>
+
+                  <div class="list_notify">
+                    <ul>
+                      <li>
+                        <span>
+                          <h3><b>Error de actualización</b></h3>
+                        </span>
+                        <p class="text-muted">El registro debe actualizarse debido a los incoveniebtes presentados en el sistema</p>
+                      </li>
+                      <li>
+                        <span>
+                          <h3><b>Error de actualización</b></h3>
+                        </span>
+                        <p class="text-muted">El registro debe actualizarse debido a los incoveniebtes presentados en el sistema</p>
+                      </li>
+                      <li>
+                        <span>
+                          <h3><b>Error de actualización</b></h3>
+                        </span>
+                        <p class="text-muted">El registro debe actualizarse debido a los incoveniebtes presentados en el sistema</p>
+                      </li>
+                      <li>
+                        <span>
+                          <h3><b>Error de actualización</b></h3>
+                        </span>
+                        <p class="text-muted">El registro debe actualizarse debido a los incoveniebtes presentados en el sistema</p>
+                      </li>
+                    </ul>
+                    <div class="footer-notify">
+                        <a href="#">Ver todo</a>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="theme-toogler">
+                  <span class="material-icons-outlined active">light_mode</span>
+                  <span class="material-icons-outlined">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                  <div class="info">
+                    <p>Hola <b>Leonardo</b></p>
+                     <small class="text-muted">Admin</small> 
+                  </div>
+                  <div class="profile-photo">
+                    <img src="assets/img/profile-2.jpg" alt="Profile.png">
+                  </div>
+
+                  <div class="drop-menu">
+                    <h3><b>Leonardo</b> <br><small class="text-muted">Administrador</small></h3>
+                      <ul>
+                        <li>
+                          <span class="material-icons-outlined">person</span>
+                          <a href="#">Perfil</a>
+                        </li>
+                        <li>
+                          <span class="material-icons-outlined">question_mark</span>
+                          <a href="#">Soporte</a>
+                        </li>
+                        <li>
+                          <span class="material-icons-outlined">build</span>
+                          <a href="#">Configurar</a>
+                        </li>
+                        <li>
+                          <span class="material-icons-outlined">event_note</span>
+                          <a href="#">Solicitudes</a>
+                        </li>
+                        <li>
+                          <span class="material-icons-outlined">logout</span>
+                          <a href="#">Salir</a>
+                        </li>
+                      </ul>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Fin de Top -->
+
+              <div class="recent-updates">
+                <h2>Ultimos Accesos</h2>
+
+                  <div class="updates">
+
+                      <div class="update">
+                        <div class="profile-photo">
+                          <img src="assets/img/profile-2.jpg" alt="Profile.png">
+                        </div>
+                        <div class="message">
+                          <p> <b>Usuario</b> esta es una actualización</p>
+                          <small class="text-muted"> Hace 1 hora</small>
+                        </div>
+                      </div>
+
+                      <div class="update">
+                        <div class="profile-photo">
+                          <img src="assets/img/profile-2.jpg" alt="Profile.png">
+                        </div>
+                        <div class="message">
+                          <p> <b>Usuario</b> esta es una actualización</p>
+                          <small class="text-muted"> Hace 1 hora</small>
+                        </div>
+                      </div>
+
+                      <div class="update">
+                        <div class="profile-photo">
+                          <img src="assets/img/profile-2.jpg" alt="Profile.png">
+                        </div>
+                        <div class="message">
+                          <p> <b>Usuario</b> esta es una actualización de sesión iniciada por </p>
+                          <small class="text-muted">Hace 1 hora</small>
+                        </div>
+                      </div>
+
+                      <div class="update">
+                        <div class="profile-photo">
+                          <img src="assets/img/profile-2.jpg" alt="Profile.png">
+                        </div>
+                        <div class="message">
+                          <p> <b>Usuario</b> esta es una actualización</p>
+                          <small class="text-muted"> Hace 1 hora</small>
+                        </div>
+                      </div>
+
+                  </div>
+                  <!-- Fin update -->
+              </div>
+              <!-- Fin Recent-updates -->
+
+
+                  <!-- Analitica de datos puede ser cualquier cosa -->
+                  <div class="analytics">
+                    <h2>Analitica de datos</h2>
+                    
+                    <div class="item segundo">
+                      <div class="icon">
+                        <span class="material-icons-outlined">trending_up</span>
+                      </div>
+                      <div class="rigth">
+                        <div class="info">
+                            <h3>Facturación</h3>
+                            <small class="text-muted">Ultimo mes</small>
+                        </div>
+                        <h5 class="success">+60%</h5>
+                        <h3>$1.345.567,890</h3>
+                      </div>
+                  </div>
+
+                  <div class="item tercero">
+                    <div class="icon">
+                      <span class="material-icons-outlined">query_stats</span>
+                    </div>
+                    <div class="rigth">
+                      <div class="info">
+                          <h3>Errores de operación</h3>
+                          <small class="text-muted">Ultimo mes</small>
+                      </div>
+                      <h5 class="danger">+10%</h5>
+                      <h3>21</h3>
+                    </div>
+                </div>
+
+                <div class="item segundo">
+                  <div class="icon">
+                    <span class="material-icons-outlined">trending_up</span>
+                  </div>
+                  <div class="rigth">
+                    <div class="info">
+                        <h3>Facturación</h3>
+                        <small class="text-muted">Ultimo mes</small>
+                    </div>
+                    <h5 class="success">+60%</h5>
+                    <h3>$1.345.567,890</h3>
+                  </div>
+              </div>
+
+                <div class="item add_produc">
+                  <div>
+                    <button class="btn_add_product">
+                      <span class="material-icons-outlined">add</span>
+                    </button>
+                    <h3>Agregar datos</h3>
+                  </div>
+                </div>
+
+                </div>
+                <!-- Fin de analitica de datos -->
+
+
+
+           </div>
+           <!-- Sección de icono de sessión, boton de menu -->
+
+       
+
+        </div>
+
+      <!-- Termina el dashboard -->
+</body>
+</html>

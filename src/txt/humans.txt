@@ -1,0 +1,17 @@
+/* TEAM */
+
+Freyder Leonardo Rey M
+Desarrollador web Front-Back - Nodejs
+
+
+/* THANKS */
+
+	Usuario: EGATOR
+	Youtube: https://www.youtube.com/c/EGATORTUTORIALS
+    Descripción: Diseñador principal de la plantilla usada en el proyecto
+
+/* SITE */
+	Last update: 2022/07/08
+	Language: Castellano
+	Doctype: HTML5
+	IDE: Visual Estudio Code
